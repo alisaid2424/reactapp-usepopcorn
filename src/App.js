@@ -46,7 +46,7 @@ const App = () => {
         setIsLoading(true);
         setError("");
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${useKey}&s=${query}`
+          `https://www.omdbapi.com/?apikey=${useKey}&s=${query}`
         );
 
         if (!res.ok)

@@ -52,7 +52,7 @@ const MovieDetails = ({
       setIsLoading(true);
       const useKey = process.env.REACT_APP_API_KEY;
       const res = await fetch(
-        `http://www.omdbapi.com/?apikey=${useKey}&i=${selectedId}`
+        `https://www.omdbapi.com/?apikey=${useKey}&i=${selectedId}`
       );
       const data = await res.json();
       setMovie(data);
